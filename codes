@@ -1,0 +1,113 @@
+using System;
+
+namespace Project
+{
+    class Csharp
+    {
+        static void Main()
+        {
+            // Output formats
+            Console.WriteLine("Hello, My name is Nahian");
+
+            // Console.WriteLine is used for printing
+            //Console.Beep();  // .Beep() is used for creating a beep sound in console
+
+            Console.WriteLine("GGGS");
+            Console.Write("This is a line that ends with the prev line");
+            Console.WriteLine("GGGS");
+            /*
+             * multiline comments
+             * 
+             * 
+             * 
+             *
+             */
+            //Console.ReadKey(); // this is used for additional key press in the console.
+            // there are few manipulating string \characters....(left backslash)
+            Console.WriteLine("Nah\nian"); // read the documentation for this!
+            Console.WriteLine("\tNahian");
+
+            // Variable ==>
+
+            // there are 2 part of variables 1. declaration 2. Assign/Initialize 
+
+            int x; // declaration
+
+            x = 10; // Initialize / assign value
+
+            // Combining these 2:
+
+            int y = 5; // combined
+
+            int z = x + y; // dont forget the semi-colon !!!
+            Console.WriteLine(x);
+            Console.WriteLine(y);
+            Console.WriteLine(z);
+
+            // for floating numbers
+            double m = 10.99;
+            Console.WriteLine("Your numbers"+ x + y); // here + used for concatenating
+
+            // more data types
+            bool a = true;
+            char b = '#'; // in single quote.. only 1 character
+            string c = "Hello";
+            Console.WriteLine(c);
+
+            // constant that does not change. for that add const at the beginning of the data type.
+            const double pi = 3.14159;
+            // now you cant assign new value to pi !!
+
+            // Converting Data type
+            double d = 22.22;
+            int e = Convert.ToInt32(d); // convereting float to int
+            Console.WriteLine(e);
+
+            // to see the type
+            Console.WriteLine(e.GetType()); // output will be (System.Int32)
+
+            // int to string
+            int f = 123;
+            string g = Convert.ToString(f);
+            Console.WriteLine(g.GetType());
+            Console.WriteLine(g);
+
+            // User Inputs
+            // to get the user input: We use Console.Readline()
+            //Console.WriteLine("Hey, Whats Your name ?");
+            //string name = Console.ReadLine();
+            //Console.WriteLine("Hello, "+name);
+
+            // Converting User string int to int
+            //string k = Console.ReadLine();
+            //int l = Convert.ToInt32(k); // or direct approach > int l = Convert.ToInt32(Console.Readline());
+
+            // basic arithmatics--
+            int friends = 5;
+            // for increment,
+            friends = friends + 1; // normal way
+            friends += 1; // python way
+            friends ++ ; // besically used in loop - increased by 1. same goes for -
+            Console.WriteLine(friends);
+
+            // math is built in... no need to import
+
+            int t, o, p;
+            t = 5;
+            o = 6;
+            p = 9;
+
+
+            Console.WriteLine(Math.Max(t, o));
+
+
+            // random numbers
+            Random random = new Random();
+            Console.WriteLine(random.NextDouble()); // Next() method selects int (0-billion) whereas NextDouble() selects float number from 0-1.
+
+            //here 1st Random is ObjectType ,random is obj name, new = new obj, Random() is the class.
+            // random keyword cant be changed.
+
+
+
+
